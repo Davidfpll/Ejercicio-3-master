@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .parráfos {
+         margin: 10px;
+         padding: 10px;
+         text-align: left;
+      }
+   </style>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="parráfos">
+      <p>
+      <form name="formulario" method="post" action="/send.php"></form>
+      </p>
+      <p>
+         <input type="texto" name="nombre" placeholder="Nombre">
+      </p>
+      <p>
+         <input type="texto" name="apellido" placeholder="Apellidos">
+      </p>
+      <p>
+         <input type="texto" name="dni" placeholder="DNI">
+      </p>
+      <p>
+         <input type="texto" name="nota modulo 1" placeholder="Notas modulo 1">
+      </p>
+      <p>
+         <input type="texto" name="nota modulo 2" placeholder="Notas modulo 2">
+      </p>
+      <p>
+         <input type="texto" name="nota modulo 3" placeholder="Notas modulo 3">
+      </p>
+      <p>
+         <input type="submit" name="Añadir Alumno" value="Añadir Alumno">
+         <input type="submit" name="Mostrar" value="Mostrar">
+      </p>
+   </div>
+   <div>
+      <div class="input-group mb-3">
+         <label class="input-group-text" for="inputGroupFile01"></label>
+         <inputtype="file" class="form-control" id="inputGroupFile01"></input>
+       </div>
+   </div>
+   <script>
+      alumnos = [
+         {
+            nombre: "David",
+            apellidos: "Olmo",
+            DNI: "47333840R",
+            Notasmodulo1: "6",
+            Notasmodulo2: "8",
+            Notasmodulo3: "10",
+         },
+         {
+            nombre: "Michael",
+            apellidos: "Naranjo",
+            DNI: "47673840R",
+            Notasmodulo1: "7",
+            Notasmodulo2: "6",
+            Notasmodulo3: "10",
+         },
+      ];
+      alumnos = JSON.stringify(alumnos);
+   </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="ejercicio4.js"></script>
+</body>
+
+</html>
